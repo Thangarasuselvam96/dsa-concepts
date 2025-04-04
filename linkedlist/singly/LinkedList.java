@@ -159,4 +159,24 @@ public class LinkedList {
         }
         System.out.println("");
     }
+
+    public Node findMiddleNodeUsingLength() {
+        int midIndex = length / 2;
+        Node temp = head;
+        for(int i = 0; i < midIndex; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    public Node findMiddleNodeWithoutLength() {
+        Node slow = head;
+        Node fast = head;
+
+        while(fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
 }

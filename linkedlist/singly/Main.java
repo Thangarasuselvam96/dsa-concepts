@@ -43,6 +43,7 @@ public class Main {
      ll.append(4);
      ll.append(5);
      ll.append(6);
+     ll.prepend(2);
      ll.prepend(1);
 
      System.out.println("before reverse");
@@ -51,6 +52,14 @@ public class Main {
      System.out.println("after reverse");
      ll.reverse();
      ll.printList();
+
+     System.out.println("========================================================");
+     System.out.println("========================================================");
+     System.out.println("find middle node using length");
+     System.out.println(ll.findMiddleNodeUsingLength().value);
+
+     System.out.println("find middle node without using length");
+     System.out.println(ll.findMiddleNodeWithoutLength().value);
 
     }
 }
