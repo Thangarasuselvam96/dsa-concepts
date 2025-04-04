@@ -61,5 +61,9 @@ public class Main {
      System.out.println("find middle node without using length");
      System.out.println(ll.findMiddleNodeWithoutLength().value);
 
+     System.out.println("has loop");
+     ll.append(2);
+     System.out.println(ll.hasLoop());
+
     }
 }
