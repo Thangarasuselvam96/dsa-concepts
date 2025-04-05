@@ -62,8 +62,10 @@ public class Main {
      System.out.println(ll.findMiddleNodeWithoutLength().value);
 
      System.out.println("has loop");
-     ll.append(2);
      System.out.println(ll.hasLoop());
 
+     System.out.println("findKthNodeFromEnd");
+     ll.printList();
+     System.out.println(ll.findKthNodeFromEnd(3).value);
     }
 }
